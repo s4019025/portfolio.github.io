@@ -1,0 +1,49 @@
+        .loading-floating-element {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #f4dd00;
+            border-radius: 50%;
+            animation: orbit 4s linear infinite;
+        }
+
+        .loading-floating-element:nth-child(1) {
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #00c7ae;
+            animation-delay: 0s;
+        }
+
+        .loading-floating-element:nth-child(2) {
+            top: 50%;
+            right: -30px;
+            transform: translateY(-50%);
+            background: #ff90b7;
+            animation-delay: 1s;
+        }
+
+        .loading-floating-element:nth-child(3) {
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #257ff5;
+            animation-delay: 2s;
+        }
+
+        .loading-floating-element:nth-child(4) {
+            top: 50%;
+            left: -30px;
+            transform: translateY(-50%);
+            background: #f4dd00;
+            animation-delay: 3s;
+        }
+
+        @keyframes orbit {
+            0% {
+                transform: rotate(0deg) translateX(40px) rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg) translateX(40px) rotate(-360deg);
+            }
+        }
