@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            cursor: url('./cursor.png') 16 16, auto;
+        }
+        
+        .test-area {
+            width: 300px;
+            height: 200px;
+            background: white;
+            border: 2px solid #333;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .test-area:hover {
+            background: #e0e0e0;
+        }
+        
+        .info {
+            background: #333;
+            color: white;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Custom Cursor Test</h1>
+    
+    <div class="info">
+        <h3>Testing Custom Cursor</h3>
+        <p>Move your mouse around this page to see if the custom cursor appears.</p>
+        <p>If you see the default cursor, there's an issue with the custom cursor image.</p>
+    </div>
+    
+    <div class="test-area">
+        <h3>Hover Area</h3>
+        <p>Move your mouse over this area to test the cursor.</p>
+    </div>
+    
+    <div class="test-area">
+        <h3>Another Test Area</h3>
+        <p>This should also show the custom cursor.</p>
+    </div>
+    
+    <div class="info">
+        <h3>Troubleshooting:</h3>
+        <ul>
+            <li>Make sure cursor.png exists in the same folder</li>
+            <li>Check if the image is a valid PNG file</li>
+            <li>Try refreshing the page</li>
+            <li>Check browser console for errors</li>
+        </ul>
+    </div>
+</body>
+</html>
